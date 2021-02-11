@@ -14,19 +14,19 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body> 
   <header class="header">
     <nav>
-      <ul>
-        <li><a href="blank.html">информация</a></li>
-        <li><a href="blank.html">фото и видео</a></li>
-        <li><a href="blank.html">карта штата</a></li>
-        <li><a href="catalog.html">гостиницы</a></li>
+      <ul class="header_list">
+        <li><a class="head_nav" href="blank.html">информация</a></li>
+        <li><a class="head_nav" href="blank.html">фото и видео</a></li>
+        <li><a class="head_nav" href="blank.html">карта штата</a></li>
+        <li><a class="head_nav" href="catalog.html">гостиницы</a></li>
       </ul>
     </nav>
-    <a href="#"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны"></a>
+    <a href="#" class="nav_logo"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны"></a>
   </header>
-  <main>
+  <main class="container">
     <section class="main_welcome">
       <img src="img/welcome.svg" width="255" height="85" alt="welcome">
       <h1>sedona</h1>
@@ -36,11 +36,13 @@
       <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <ul class="reasons_list">
-        <li>
+        <li class="reasons_item_1_2">
           <h3>Настоящий городок</h3>
           <p>-№1-</p>
           <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           <img src="img/image1.jpg" alt="фото с флагом на переднем плане" width="800" height="256">
+        </li>
+        <li class="reasons_item">
           <ul class="reasons_sublist">
             <li>
               <h4>жилье</h4>
@@ -55,57 +57,57 @@
               <p>Не только китайского, но и местного производства!</p>
             </li>
           </ul>
-          </li>
-          <li>
-            <img src="img/image2.jpg" alt="мост дъявола" width="800" height="256">
-            <h3>Там есть мост дъявола</h3>
-            <p>-№2-</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </li>
-          <li>
-            <h3>Небольшая площадь</h3>
-            <p>-№3-</p>
-            <p>все достопримечательности находятся очень близко</p>
-          </li>
-          <li>
-            <h3>Красивая дорога</h3>
-            <p>-№4-</p>
-            <p>ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li>
-            <h3>мало туристов</h3>
-            <p>-№5-</p>
-            <p>большинство едет в гранд каньон и толпится там</p>
-          </li>
+        </li>
+        <li class="reasons_item_1_2">
+          <img src="img/image2.jpg" alt="мост дъявола" width="800" height="256">
+          <h3>Там есть мост дъявола</h3>
+          <p>-№2-</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </li>
+        <li class="reasons_item">
+          <h3>Небольшая площадь</h3>
+          <p>-№3-</p>
+          <p>все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="reasons_item">
+          <h3>Красивая дорога</h3>
+          <p>-№4-</p>
+          <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+        </li>
+        <li class="reasons_item">
+          <h3>мало туристов</h3>
+          <p>-№5-</p>
+          <p>большинство едет в гранд каньон и толпится там</p>
+        </li>
       </ul>
     </section>
-    <section class="search_hotel">
+    <section class="presearch_hotel">
       <h2>Зантересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button>Поиск гостиницы в седоне</button>
+      <button class="button">Поиск гостиницы в седоне</button>
     </section>
-    <section class="main_map">
+    <section class="map">
       <h2>Карта штата</h2>
       <img src="img/map.png" alt="Карта штата" width="1199" height="594">
     </section>
   </main>
   <footer class="footer">
-    <address>
+    <address class="address">
       <a href="#">#VISITSEDONA</a>
       ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a>
     </address>
-    <ul>
+    <ul class="social_list">
       <li>
-        <a href="http://twitter.com">twitter</a>
+        <a class="social_button social_button_TW" href="http://twitter.com">twitter</a>
       </li>
       <li>
-        <a href="http://facebook.com">FB</a>
+        <a class="social_button social_button_FB" href="http://facebook.com">facebook</a>
       </li>
       <li>
-        <a href="http://youtube.com">youtube</a>
+        <a class="social_button social_button_YT" href="http://youtube.com">youtube</a>
       </li>
     </ul>
-    <p>website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115"
+    <p>website by <a class="html_logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115"
           height="41" alt="Логотип htmlacademy"></a></p>
   </footer>
 </body>
