@@ -152,7 +152,6 @@ img {
 /* Footer */
 
 .footer {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: inherit;
   line-height: 26px;
   font-weight: 700px;
@@ -165,54 +164,42 @@ img {
 
 .address {}
 
-.social_list li {
+.social_list {
   list-style-type: none;
   margin-left: 0px;
   padding-left: 0px;
 }
-
+/*
 .social_button {
-  background-color: var(--light-blue);
-  background-repeat: no-repeat;
   width: 46px;
   height: 48px;
+  background: var(--light-blue);
 }
 
-/*
-.social_button_TW {
-  background-image: url(../img/twitter-icon.svg);
-  background-position: center;
+.social_button_TW::before {
+  content: url(../img/twitter-icon.svg);
 }
 
-.social_button_FB {
-  background-image: url(../img/fb-icon.svg);
-  background-position: center;
+.social_button_FB::before {
+  content: url(../img/fb-icon.svg);
 }
 
-.social_button_YT {
-  background-image: url(../img/youtube-icon.svg);
-  background-position: center;
+.social_button_YT::before {
+  content: url(../img/youtube-icon.svg);
 }
 */
-
-/*
-.html_logo {
-  background-image: url(../img/logo-htmlacademy.svg);
-  background-position: center;
-  background-repeat: no-repeat;
+.html_logo::before {
+  content: url(../img/logo-htmlacademy.svg);
 }
 
-.html_logo:hover {
-  background-image: url(../img/logo-htmlacademy-hover.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.html_logo:hover::before {
+  content: url(../img/logo-htmlacademy-hover.svg);
 }
 
-.html_logo:focus {
-  color: var(--basic-black);
+.html_logo:focus::before {
+  content: url(../img/logo-htmlacademy-hover.svg);
   opacity: 0.3;
 }
-*/
 
 /* 
 :hover — ссылка, на которую наведен курсор;
@@ -381,12 +368,11 @@ img {
 }
 
 .star {
-  background-image: url(../img/star.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   list-style: none;
-  margin-left: 0px;
-  padding-left: 0px;
+}
+
+.star::before {
+  content: url(../img/star.svg);
 }
 
 .rate {
