@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -14,103 +14,144 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body> 
-  <div class="main">
+<body>
   <header class="header">
-    <nav>
-      <ul class="header_list">
-        <li><a class="head_nav" href="blank.html">информация</a></li>
-        <li><a class="head_nav" href="blank.html">фото и видео</a></li>
-        <li><a class="head_nav" href="blank.html">карта штата</a></li>
-        <li><a class="head_nav" href="catalog.html">гостиницы</a></li>
-      </ul>
+    <nav class="navigation">
+      <a href="#" class="nav_logo"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны"></a>
+      <div class="navigation_wrapper">
+        <ul class="header_list">
+          <li><a class="head_nav" href="blank.html">информация</a></li>
+          <li><a class="head_nav" href="blank.html">фото и видео</a></li>
+          <li><a class="head_nav" href="blank.html">карта штата</a></li>
+          <li><a class="head_nav" href="catalog.html">гостиницы</a></li>
+        </ul>
+      </div>
     </nav>
-    <a href="#" class="nav_logo"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны"></a>
+
   </header>
   <main class="container">
     <section class="main_welcome">
-      <img src="img/welcome.svg" width="255" height="85" alt="welcome">
-      <h1 class="main_heading">sedona</h1>
-      <img src="img/welcome2.svg" width="295" height="80" alt="Sedona Becouse the Grand canyon sucks">
+      <div class="main_welcome-container">
+        <img src="img/welcome.svg" width="255" height="85" alt="welcome">
+        <h1 class="main_heading">sedona</h1>
+        <img src="img/welcome2.svg" width="295" height="80" alt="Becouse the Grand canyon sucks">
+      </div>
     </section>
     <section class="reasons">
-      <h2 class="heading">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <div class="about_sedona">
+          <h2 class="heading">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="about_sedona-text-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
       <ul class="reasons_list">
-        <li class="reasons_item reasons_item-blue">
-          <h3 class="heading">Настоящий городок</h3>
-          <p>-№1-</p>
-          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-          <img src="img/image1.jpg" alt="фото с флагом на переднем плане" width="800" height="256">
+        <li class="reasons_item reasons_item-wide">
+          <div class="reasons_blue">
+            <h3 class="heading reasons_heading">Настоящий городок</h3>
+            <p>-№1-</p>
+            <div class="reasons_item-text">
+              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+          </div>
+          <div class="reasons_image">
+            <img src="img/image1.jpg" alt="фото с флагом на переднем плане" width="800" height="256">
+          </div>
         </li>
-        <li class="reasons_item reasons_item-grey">
+        <li class="reasons_item">
           <ul class="reasons_sublist">
-            <li>
-              <h4 class="heading">жилье</h4>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <li class="sublist_item">
+              <h4 class="heading reasons_heading house">жилье</h4>
+              <div class="reasons_item-text">
+                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </div>
             </li>
-            <li>
-              <h4 class="heading">еда</h4>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <li class="sublist_item">
+              <h4 class="heading reasons_heading burger">еда</h4>
+              <div class="reasons_item-text">
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </div>
             </li>
-            <li>
-              <h4 class="heading">сувениры</h4>
-              <p>Не только китайского, но и местного производства!</p>
+            <li class="sublist_item">
+              <h4 class="heading reasons_heading gift">сувениры</h4>
+              <div class="reasons_item-text">
+                <p>Не только китайского, но и местного производства!</p>
+              </div>
             </li>
           </ul>
         </li>
-        <li class="reasons_item reasons_item-blue">
-          <img src="img/image2.jpg" alt="мост дъявола" width="800" height="256">
-          <h3 class="heading">Там есть мост дъявола</h3>
-          <p>-№2-</p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <li class="reasons_item reasons_item-wide">
+          <div class="reasons_image">
+            <img src="img/image2.jpg" alt="мост дъявола" width="800" height="256">
+          </div>
+          <div class="reasons_blue">
+            <h3 class="heading reasons_heading">Там есть мост дъявола</h3>
+            <p>-№2-</p>
+            <div class="reasons_item-text">
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+          </div>
         </li>
-        <li class="reasons_item reasons_item-grey">
-          <h3 class="heading">Небольшая площадь</h3>
-          <p>-№3-</p>
-          <p>все достопримечательности находятся очень близко</p>
-        </li>
-        <li class="reasons_item reasons_item-grey">
-          <h3 class="heading">Красивая дорога</h3>
-          <p>-№4-</p>
-          <p>ехать в седону из лас-вегаса совсем не скучно!</p>
-        </li>
-        <li class="reasons_item reasons_item-grey">
-          <h3 class="heading">мало туристов</h3>
-          <p>-№5-</p>
-          <p>большинство едет в гранд каньон и толпится там</p>
-        </li>
+        <div class="reasons-tripple">
+          <li class="reasons_item reasons_item-narrow">
+            <h3 class="heading reasons_heading">Небольшая площадь</h3>
+            <p>-№3-</p>
+            <div class="reasons_item-text">
+              <p>все достопримечательности находятся очень близко</p>
+            </div>
+          </li>
+          <li class="reasons_item reasons_item-narrow">
+            <h3 class="heading reasons_heading">Красивая дорога</h3>
+            <p>-№4-</p>
+            <div class="reasons_item-text">
+              <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+            </div>
+          </li>
+          <li class="reasons_item reasons_item-narrow">
+            <h3 class="heading reasons_heading">мало туристов</h3>
+            <p>-№5-</p>
+            <div class="reasons_item-text">
+              <p>большинство едет в гранд каньон и толпится там</p>
+            </div>
+          </li>
+        </div>
       </ul>
     </section>
     <section class="presearch_hotel">
-      <h2>Зантересовались?</h2>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <div class="presearch_headding">
+        <h2>Зантересовались?</h2>
+      </div>
+      <div class="presearch_text">
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      </div>
       <button class="button search">Поиск гостиницы в седоне</button>
     </section>
     <section class="map">
       <h2>Карта штата</h2>
-      <img src="img/map.png" alt="Карта штата" width="1199" height="594">
+      <img src="img/map.png" alt="Карта штата" width="1200" height="594">
     </section>
   </main>
   <footer class="footer">
-    <address class="address">
-      <a href="#">#VISITSEDONA</a>
-      ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a>
-    </address>
-    <ul class="social_list">
-      <li>
+    <div class="contacts">
+      <div class="contacts_item">
+        <a href="#">#VISITSEDONA</a>
+      </div>
+      <div class="contacts_item">
+        ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a>
+      </div>
+    </div>
+    <div class="social_list">
+      <div>
         <a class="social_button social_button_TW" href="http://twitter.com"></a>
-      </li>
-      <li>
+      </div>
+      <div>
         <a class="social_button social_button_FB" href="http://facebook.com"></a>
-      </li>
-      <li>
+      </div>
+      <div>
         <a class="social_button social_button_YT" href="http://youtube.com"></a>
-      </li>
-    </ul>
-    <p>website by <a class="html_logo" href="https://htmlacademy.ru/intensive/htmlcss"></a></p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>website by <a class="html_logo" href="https://htmlacademy.ru/intensive/htmlcss"></a></p>
   </footer>
-</div>
 </body>
 
 </html>
