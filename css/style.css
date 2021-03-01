@@ -124,21 +124,23 @@ img {
   color: inherit;
 }
 
-.about_sedona {
-  height: 216px;
-  width: 500px;
-}
-
 .about_sedona-text {
+  position: relative;
+  align-items: center;
+  width: 500px;
   height: 80px;
   margin-top: 42px;
   margin-bottom: 16px;
+  left: 350px;
 }
 
 .about_sedona-text-reasons {
+  position: relative;
+  align-items: center;
   width: 550px;
   height: 26px;
   margin-bottom: 51px;
+  left: 325px;
 }
 
 .reasons_list {
