@@ -63,18 +63,18 @@ img {
   color: var(--basic-black);
 }
 
-.navigation {
-  display: grid;
-}
-
 .header_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   list-style-type: none;
   margin-left: 0px;
   padding-left: 0px;
+  margin-top: -50px;
 }
 
 .head_nav {
   color: var(--basic-black);
+  width: fit-content;
 }
 
 .head_nav:hover {
@@ -88,6 +88,7 @@ img {
 
 .nav_logo {
   order: 1;
+  position: relative;
 }
 
 /* Main */
@@ -103,13 +104,15 @@ img {
   width: 100%;
   height: 509px;
   display: grid;
+  margin-top: -15px;
 }
 
 .main_welcome-container {
   width: max-content;
   height: 350px;
   margin: auto;
-  top: 77; left: 0; bottom: 80; right: 0;
+  top: 77px;
+  bottom: 80px;
 }
 
 .main_heading {
@@ -122,20 +125,18 @@ img {
 }
 
 .about_sedona {
-  display: grid;
   height: 216px;
   width: 500px;
 }
 
 .about_sedona-text {
-  display: flex;
   height: 80px;
   margin-top: 42px;
   margin-bottom: 16px;
 }
 
 .about_sedona-text-reasons {
-  width: ;
+  width: 550px;
   height: 26px;
   margin-bottom: 51px;
 }
@@ -166,17 +167,22 @@ img {
 }
 
 .reasons_image {
-  width: 800px;
+  min-width: 800px;
 }
 
 .reasons_item-narrow {
   background-color: var(--basic-grey);
+  width: 400px;
+  height: 256px;
+  margin: 0;
 }
 
 .reasons-tripple {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 256px;
+  list-style-type: none;
+  padding: 0px;
 }
 
 .reasons_item-text {
@@ -215,7 +221,6 @@ img {
 
 .heading.house::before {
   content: url(../img/house-icon.svg);
-  
 }
 
 .heading.burger::before {
@@ -236,26 +241,28 @@ img {
   height: 300px;
 }
 
-.sublist_item {}
-
 .presearch_hotel {
-  display: grid;
   height: 291px;
 }
 
 .presearch_headding {
   width: 300px;
-  height:fit-content;
+  height: fit-content;
+  position: relative;
+  left: 450px;
   margin-top: 58px;
   margin-bottom: 4px;
   justify-self: center;
 }
 
 .presearch_text {
+  display: flex;
+  align-items: center;
   width: 450px;
-  height: fit-content;
+  height: 95px;
   margin-bottom: 24px;
-  justify-self: center;
+  position: relative;
+  left: 375px;
 }
 
 .button.search {
@@ -266,6 +273,7 @@ img {
   font-size: 21px;
   line-height: 26px;
   justify-self: center;
+  margin-bottom: 0px;
 }
 
 .button.search:hover {
@@ -310,7 +318,7 @@ img {
 .social {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 6 auto;
+  margin: 6px auto;
 }
 
 .social_list {
@@ -336,20 +344,17 @@ img {
 }
 
 .social_button_TW::before {
-  position: relative;
   display: inline-block;
   content: url(../img/twitter-icon.svg);
 }
 
 .social_button_TW:hover {
-  display: inline-block;
   background-color: var(--basic-blue);
 }
 
 .social_button_TW:focus::before {
-  display: inline-block;
   background-color: var(--dark-blue);
-  content: url(../img/twitter-focus.svg);
+  opacity: 0.3;
 }
 
 .social_button_FB::before {
@@ -358,14 +363,12 @@ img {
 }
 
 .social_button_FB:hover {
-  display: inline-block;
   background-color: var(--basic-blue);
 }
 
 .social_button_FB:focus::before {
-  display: inline-block;
   background-color: var(--dark-blue);
-  content: url(../img/fb-icon-focus.svg);
+  opacity: 0.3;
 }
 
 .social_button_YT::before {
@@ -374,14 +377,12 @@ img {
 }
 
 .social_button_YT:hover {
-  display: inline-block;
   background-color: var(--basic-blue);
 }
 
 .social_button_YT:focus::before {
-  display: inline-block;
   background-color: var(--dark-blue);
-  content: url(../img/youtube-focus.svg);
+  opacity: 0.3;
 }
 
 .copyright {
