@@ -253,11 +253,7 @@ ul {
   font-weight: 700;
 }
 
-.presearch_hotel {
-  height: 291px;
-}
-
-.presearch_headding {
+.presearch_heading {
   width: 300px;
   height: fit-content;
   position: relative;
@@ -285,7 +281,7 @@ ul {
   font-size: 21px;
   line-height: 26px;
   justify-self: center;
-  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .button.search:hover {
