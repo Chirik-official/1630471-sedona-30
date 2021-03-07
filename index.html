@@ -16,16 +16,15 @@
 
 <body>
   <header class="header">
-    <nav>
+    <nav class="main_nav">
       <a href="#" class="nav_logo"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны"></a>
-        <ul class="header_list">
-          <li><a class="head_nav" href="blank.html">информация</a></li>
-          <li><a class="head_nav" href="blank.html">фото и видео</a></li>
-          <li><a class="head_nav" href="blank.html">карта штата</a></li>
-          <li><a class="head_nav" href="catalog.html">гостиницы</a></li>
-        </ul>
+      <ul class="nav_list">
+        <li class="nav_item"><a class="head_nav" href="blank.html">информация</a></li>
+        <li class="nav_item"><a class="head_nav" href="blank.html">фото и видео</a></li>
+        <li class="nav_item"><a class="head_nav" href="blank.html">карта штата</a></li>
+        <li class="nav_item"><a class="head_nav" href="catalog.html">гостиницы</a></li>
+      </ul>
     </nav>
-
   </header>
   <main class="container">
     <section class="main_welcome">
@@ -47,20 +46,24 @@
           </div>
           <img class="reasons_image" src="img/image1.jpg" alt="фото с флагом на переднем плане" width="800"
             height="256">
-        </li>
-        <li class="reasons_item">
           <ul class="reasons_sublist">
-            <li>
-              <h4 class="heading reasons_heading house">жилье</h4>
-              <p class="reasons_item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <li class="sublist_item">
+              <div class="house">
+                <h4 class="heading reasons-sublist_heading">жилье</h4>
+                <p class="reasons_item-text-sublist">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </div>
             </li>
-            <li>
-              <h4 class="heading reasons_heading burger">еда</h4>
-              <p class="reasons_item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <li class="sublist_item">
+              <div class="burger">
+                <h4 class="heading reasons-sublist_heading">еда</h4>
+                <p class="reasons_item-text-sublist">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </div>
             </li>
-            <li>
-              <h4 class="heading reasons_heading gift">сувениры</h4>
-              <p class="reasons_item-text">Не только китайского, но и местного производства!</p>
+            <li class="sublist_item">
+              <div class="gift">
+                <h4 class="heading reasons-sublist_heading">сувениры</h4>
+                <p class="reasons_item-text-sublist">Не только китайского, но и местного производства!</p>
+              </div>
             </li>
           </ul>
         </li>
@@ -72,34 +75,32 @@
             <p class="reasons_item-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </li>
-        <li>
-          <ul class="reasons-tripple">
-            <li class="reasons_item reasons_item-narrow">
-              <h4 class="heading reasons_heading">Небольшая площадь</h4>
-              <p>-№3-</p>
-              <p class="reasons_item-text">все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="reasons_item reasons_item-narrow">
-              <h4 class="heading reasons_heading">Красивая дорога</h4>
-              <p>-№4-</p>
-              <p class="reasons_item-text">ехать в седону из лас-вегаса совсем не скучно!</p>
-            </li>
-            <li class="reasons_item reasons_item-narrow">
-              <h4 class="heading reasons_heading">мало туристов</h4>
-              <p>-№5-</p>
-              <p class="reasons_item-text">большинство едет в гранд каньон и толпится там</p>
-            </li>
-          </ul>
+        <li class="reasons_item reasons_item-narrow reasons-tripple">
+          <h4 class="heading reasons_heading">Небольшая площадь</h4>
+          <p>-№3-</p>
+          <p class="reasons_item-text">все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="reasons_item reasons_item-narrow reasons-tripple">
+          <h4 class="heading reasons_heading">Красивая дорога</h4>
+          <p>-№4-</p>
+          <p class="reasons_item-text">ехать в седону из лас-вегаса совсем не скучно!</p>
+        </li>
+        <li class="reasons_item reasons_item-narrow reasons-tripple">
+          <h4 class="heading reasons_heading">мало туристов</h4>
+          <p>-№5-</p>
+          <p class="reasons_item-text">большинство едет в гранд каньон и толпится там</p>
+        </li>
         </li>
       </ul>
     </section>
     <section class="presearch_hotel">
-        <h2 class="presearch_headding">Зантересовались?</h2>
-        <p class="presearch_text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <h2 class="presearch_headding">Зантересовались?</h2>
+      <p class="presearch_text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+        седоне</p>
       <button class="button search">Поиск гостиницы в седоне</button>
     </section>
     <section class="map">
-      <h2>Карта штата</h2>
+      <h2 class="heading-hidden">Карта штата</h2>
       <img src="img/map.png" alt="Карта штата" width="1200" height="594">
     </section>
   </main>
