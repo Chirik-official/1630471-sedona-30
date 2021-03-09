@@ -28,8 +28,7 @@
 
 body {
   width: 1200px;
-  margin: 40px;
-  margin-top: 0px;
+  margin: 0px 40px;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -142,17 +141,13 @@ ul {
 
 .about_sedona-text {
   position: relative;
-  align-items: center;
   width: 500px;
   height: 80px;
-  margin-top: 42px;
-  margin-bottom: 16px;
   left: 350px;
 }
 
 .about_sedona-text-reasons {
   position: relative;
-  align-items: center;
   width: 550px;
   height: 26px;
   margin-bottom: 51px;
@@ -189,6 +184,11 @@ ul {
   color: var(--basic-white);
 }
 
+.block-text {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .reasons_sublist {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -196,49 +196,42 @@ ul {
 }
 
 .sublist_item {
-  height: 330px;
+  padding-top: 132px;
+  padding-bottom: 80px;
 }
 
-.reasons_item-narrow {
+.reasons_item-grey {
   background-color: var(--basic-grey);
-  height: 256px;
 }
 
 .reasons_item-text {
   width: 300px;
   margin: auto;
-  padding-bottom: 50px;
 }
 
 .reasons_heading {
   width: 180px;
-  align-items: center;
   margin: auto;
-  padding-top: 47px;
 }
 
-.house {
-  background-image: url(../img/house-icon.svg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  margin-top: 60px;
-  padding-top: 72px;
+.house::before {
+  content: url(../img/house-icon.svg);
+  position: absolute;
+  top: 1078px;
 }
 
-.burger {
-  background-image: url(../img/burger-icon.svg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  margin-top: 62px;
-  padding-top: 70px;
+.food::before {
+  content: url(../img/burger-icon.svg);
+  position: absolute;
+  top: 1078px;
+  left: 911px;
 }
 
-.gift {
-  background-image: url(../img/gift-icon.svg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  margin-top: 55px;
-  padding-top: 77px;
+.gifts::before {
+  content: url(../img/gift-icon.svg);
+  position: absolute;
+  top: 1071px;
+  left: 1318px;
 }
 
 .reasons_item-text-sublist {
