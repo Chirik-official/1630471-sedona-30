@@ -492,6 +492,8 @@ ul {
 .sort-heading {
   text-align: left;
   margin: 0px;
+  font-weight: inherit;
+  font-size: inherit;
 }
 
 .sort {
