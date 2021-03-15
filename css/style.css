@@ -476,17 +476,17 @@ ul {
 
 /*Hotels */
 
-.search_result {}
-
-.search_result-sort {
-  font-size: 12px;
-  line-height: 18px;
-}
-
 .sort-block {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   padding: 30px 73px;
+}
+
+.sort-list {
+  font-size: 12px;
+  line-height: 18px;
+  display: grid;
+  grid-template-columns: 100px 300px;
 }
 
 .sort-heading {
@@ -512,7 +512,7 @@ ul {
 .sort:hover {
   color: var(--light-blue);
   text-decoration: underline;
-  text-decoration-style: dashed 1px;
+  text-decoration-style: dashed;
 }
 
 .sort:focus {
@@ -521,7 +521,7 @@ ul {
 
 .search_result-sort {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   text-align: left;
 }
 
