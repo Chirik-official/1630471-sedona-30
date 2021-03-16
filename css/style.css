@@ -224,14 +224,14 @@ ul {
   content: url(../img/burger-icon.svg);
   position: absolute;
   top: 1078px;
-  left: 911px;
+  left: 725px;
 }
 
 .gifts::before {
   content: url(../img/gift-icon.svg);
   position: absolute;
   top: 1071px;
-  left: 1318px;
+  left: 1125px;
 }
 
 .reasons_item-text-sublist {
@@ -304,47 +304,36 @@ ul {
   opacity: 0.9;
 }
 
-.footer {
-  color: var(--basic-black);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 120px;
+.footer {  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .contacts {
   font-size: 21px;
-  width: max-content;
-  margin: auto;
+  font-style: normal;
   font-weight: 700;
 }
 
-.contacts_item {
-  margin: 9px auto;
-}
-
-.social {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 6px auto;
-}
-
 .social_list {
-  list-style-type: none;
-  margin-left: 0px;
-  padding-left: 0px;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 144px;
-  margin: 6px;
-  margin-top: 36px;
-  margin-bottom: 36px;
-  justify-self: center;
-  align-items: center;
+  display: flex;
+  margin: 0;
+}
+
+.social-item {
+  display: inline;
+  margin-right: 6px;
+}
+
+.social-item:last-child {
+  margin-right: 0;
 }
 
 .social_button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   background: var(--light-blue);
@@ -396,8 +385,6 @@ ul {
   font-size: inherit;
   font-weight: inherit;
   width: 250px;
-  margin: 0 auto;
-  padding-right: 140px;
 }
 
 .html_logo::before {
