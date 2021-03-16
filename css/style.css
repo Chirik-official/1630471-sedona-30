@@ -322,7 +322,7 @@ ul {
 
 .social_list {
   display: flex;
-  margin: 0;
+  margin-right: 10px;
 }
 
 .social-item {
