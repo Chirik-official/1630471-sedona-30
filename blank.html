@@ -1,41 +1,50 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/32.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="blank.html">информация</a></li>
-        <li><a href="blank.html">фото и видео</a></li>
-        <li> <a href="blank.html">карта штата</a></li>
-        <li><a href="catalog.html">гостиницы</a></li>
+  <header class="header">
+    <nav class="main_nav">
+      <a href="#" class="nav_logo"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны"></a>
+      <ul class="nav_list">
+        <li class="nav_item"><a class="head_nav" href="blank.html">информация</a></li>
+        <li class="nav_item"><a class="head_nav" href="blank.html">фото и видео</a></li>
+        <li class="nav_item"><a class="head_nav" href="blank.html">карта штата</a></li>
+        <li class="nav_item"><a class="head_nav" href="catalog.html">гостиницы</a></li>
       </ul>
     </nav>
-    <img src="img/logo.png" alt="Логотип Седоны">
   </header>
-  <footer>
-    <address>
-      <a href="#">#VISITSEDONA</a>
-      ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a>
+  <footer class="footer">
+    <address class="contacts">
+      <p><a href="#">#VISITSEDONA</a></p>
+      <p>ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a></p>
     </address>
-    <ul>
-      <li>
-        <a href="http://twitter.com">twitter</a>
+    <ul class="social_list">
+      <li class="social-item">
+        <a class="social_button social_button_TW" href="http://twitter.com"></a>
       </li>
-      <li>
-        <a href="http://facebook.com">FB</a>
+      <li class="social-item">
+        <a class="social_button social_button_FB" href="http://facebook.com"></a>
       </li>
-      <li>
-        <a href="http://youtube.com">youtube</a>
+      <li class="social-item">
+        <a class="social_button social_button_YT" href="http://youtube.com"></a>
       </li>
     </ul>
-    <p>website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"
-          alt="Логотип htmlacademy"></a></p>
+    <div class="copyright">
+      <p>website by <a class="html_logo" href="https://htmlacademy.ru/intensive/htmlcss"></a></p>
+    </div>
   </footer>
 </body>
 

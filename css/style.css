@@ -214,24 +214,28 @@ ul {
   margin: auto;
 }
 
+.sublist-heading {
+  position: relative;
+}
+
 .house::before {
   content: url(../img/house-icon.svg);
   position: absolute;
-  top: 1078px;
+  top: -100px;
 }
 
 .food::before {
   content: url(../img/burger-icon.svg);
   position: absolute;
-  top: 1078px;
-  left: 725px;
+  top: -100px;
+  right: 163px;
 }
 
 .gifts::before {
   content: url(../img/gift-icon.svg);
   position: absolute;
-  top: 1071px;
-  left: 1125px;
+  top: -108px;
+  right: 168px;
 }
 
 .reasons_item-text-sublist {
@@ -322,7 +326,7 @@ ul {
 }
 
 .social-item {
-  display: inline;
+  
   margin-right: 6px;
 }
 
@@ -342,6 +346,8 @@ ul {
 .social_button_TW::before {
   display: inline-block;
   content: url(../img/twitter-icon.svg);
+  width: 17px;
+  height: 18px;
 }
 
 .social_button_TW:hover {
@@ -356,6 +362,8 @@ ul {
 .social_button_FB::before {
   display: inline-block;
   content: url(../img/fb-icon.svg);
+  width: 12px;
+  height: 22px;
 }
 
 .social_button_FB:hover {
@@ -370,6 +378,8 @@ ul {
 .social_button_YT::before {
   display: inline-block;
   content: url(../img/youtube-icon.svg);
+  width: 20px;
+  height: 18px;
 }
 
 .social_button_YT:hover {
@@ -382,9 +392,10 @@ ul {
 }
 
 .copyright {
+  display: flex;
+  align-items: center;
   font-size: inherit;
   font-weight: inherit;
-  width: 250px;
 }
 
 .html_logo::before {
