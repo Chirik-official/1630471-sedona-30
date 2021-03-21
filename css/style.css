@@ -474,6 +474,86 @@ ul {
   font-size: 16px;
   font-weight: 700;
 }
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  position: relative;
+  width: 330px;
+  height: 80px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  background-color: none;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  width: 330px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  margin-top: 20px;
+  width: 70%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #d7dcde;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  border: 2px solid var(--basic-white);
+  height: 32px;
+  width: 330px;
+}
+
+.price-controls::before {
+  content: url(../img/strip.svg);
+  position: absolute;
+  top: 5px; 
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.price-controls input {
+  width: 70px;
+  height: 8px;
+  padding: 10px;
+  text-align: center;
+  color: var(--basic-white);
+  background: none;
+  border: none;
+}
 
 .form_button {
   background: none;
@@ -483,6 +563,13 @@ ul {
   border-radius: 2px;
   width: 137px;
   height: 36px;
+  align-self: center;
+}
+
+.form_hotel-cost {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .form_button:hover {
