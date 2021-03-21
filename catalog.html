@@ -66,8 +66,23 @@
         </fieldset>
         <fieldset class="form-item form_hotel-cost">
           <legend class="form-heading">Стоимость в сутки(Р):</legend>
-          <p> от 0 до 3000</p>
-          <p><input type="range" min="0" max="3000"></p>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="price-controls">
+                <label class="min-price">
+                  <input type="text" name="min-price" value="ОТ 0">
+                </label>
+                <label class="max-price">
+                  <input type="text" name="max-price" value="ДО 3000">
+                </label>
+              </div>
+              <div class="scale">
+                <div class="bar" style="width: 70%; margin-left: 0%"></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0" style="left: 0%"></div>
+              <div class="toggle toggle-max" tabindex="0" style="left: 70%"></div>
+            </div>
+          </div>
           <input class="form_button" type="submit" value="Показать">
         </fieldset>
       </form>
@@ -75,12 +90,12 @@
     <section class="search_result">
       <h2 class="heading-hidden">Результат поиска</h2>
       <div class="sort-block">
-        <p class="heading sort-heading">Найдено: 3</p>
+        <p class="heading-catalog">Найдено: 3</p>
         <div class="sort-list">
           <h3 class="sort-heading">Сортировка:</h3>
           <ul class="search_result-sort">
-            <li class="sort-item"><a class="sort disabled" href="">По типу</a></li>
-            <li class="sort-item"><a class="sort" href="#">По цене</a></li>
+            <li class="sort-item"><a class="sort disabled" href="">По цене</a></li>
+            <li class="sort-item"><a class="sort" href="#">По типу</a></li>
             <li class="sort-item"><a class="sort" href="#">По рейтингу</a></li>
           </ul>
         </div>
@@ -96,14 +111,14 @@
         <li class="hotel_list-item">
           <img class="hotel-img" src="img/amara.jpg" width="135" height="90" alt="Фото отеля Amara Resort & SPA">
           <div class="hotel-info">
-            <h3 class="hotel"><a class="heading" href="#">Amara resort & SPA</a></h3>
+            <h3 class="heading-catalog"><a class="hotel" href="#">Amara resort & SPA</a></h3>
             <div class="info-item">
               <p>Гостиница</p>
               <a class="button more" href="#">Подробнее</a>
             </div>
             <div class="info-item">
               <p>от 4000р.</p>
-              <a class="button booking" href="#">Забронировать</a>
+              <a class="button booking button-brown" href="#">Забронировать</a>
             </div>
           </div>
           <div class="rate-star">
@@ -119,14 +134,14 @@
         <li class="hotel_list-item">
           <img class="hotel-img" src="img/desert_quail.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
           <div class="hotel-info">
-            <h3 class="hotel"><a class="heading" href="#">Desert Quail Inn</a></h3>
+            <h3 class="heading-catalog"><a class="hotel" href="#">Desert Quail Inn</a></h3>
             <div class="info-item">
               <p>Мотель</p>
               <a class="button more" href="#">Подробнее</a>
             </div>
             <div class="info-item">
               <p>от 3000р.</p>
-              <a class="button booking" href="#">Забронировать</a>
+              <a class="button booking button-brown" href="#">Забронировать</a>
             </div>
           </div>
           <div class="rate-star">
@@ -142,14 +157,14 @@
           <img class="hotel-img" src="img/villas_poco_diablo.jpg" width="135" height="90"
             alt="фото апартаментов Villas Poco Diablo">
           <div class="hotel-info">
-            <h3 class="hotel"><a class="heading" href="#">Villas Poco Diablo</a></h3>
+            <h3 class="heading-catalog"><a class="hotel" href="#">Villas Poco Diablo</a></h3>
             <div class="info-item">
               <p>Апартаменты</p>
               <a class="button more" href="#">Подробнее</a>
             </div>
             <div class="info-item">
               <p>от 2000р.</p>
-              <a class="button booking" href="#">Забронировать</a>
+              <a class="button booking button-brown" href="#">Забронировать</a>
             </div>
           </div>
           <div class="rate-star">
